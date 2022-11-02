@@ -9,7 +9,8 @@ I am currently learning how to make a REST API with authentication using Spring 
 
 This is my third rewrite of this website, previously it looked like: 
 
-![website_v2](/public/website_remix_landing.png)
+<!-- ![website_v2](/public/website_remix_landing.png) -->
+<img src="/public/website_remix_landing.png">
 
 I used Remix here along with TailwindCSS for styling. Pretty fancy for a blog and few pages.
 
