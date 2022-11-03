@@ -15,7 +15,7 @@ I used Remix here along with TailwindCSS for styling. Pretty fancy for a blog an
 
 Before that, it was plain HTML and CSS.
 
-![website_v1](/public/website_v1.png)
+![website_v1](/website_v1.png)
 
 As you can see, I like __minimal designs__. 
 
