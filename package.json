@@ -1,8 +1,13 @@
 {
-  "name": "@example/blog",
+  "name": "astro-smaitra-blog",
   "type": "module",
   "version": "0.0.1",
+  "description": "Personal website of Siddhant Maitra. (www.smaitra.com)",
   "private": true,
+  "repository": { 
+  "type": "git", 
+  "url": "https://github.com/siddhantmaitra/astro-blog.git" 
+  }, 
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
