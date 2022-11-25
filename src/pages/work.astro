@@ -2,14 +2,70 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE} from '../config'
+import { SITE_TITLE } from "../config";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description="Portfolio of Siddhant Maitra" />
 	</head>
-	<Header/>
-	<h2>//TODO</h2>
-	<Footer/>
+	<Header />
+
+	<ul>
+		<li>
+			<h3>GreenMate</h3>
+			<p>
+				<b>GreenMate</b> is an E-commerce store where products
+				related to horticultural needs such as plants, saplings 
+				and gardening tools can be sold, making such items far 
+				more accessible to buyers and enthusiasts.
+			</p>
+			<p>
+				<b>Tech Stack:</b> ReactJS, BootStrap, JavaScript, Django, Python, PostgreSQL
+			</p>
+			<p>
+				<b>Links:</b>
+				<!-- <a href="#">Demo</a> -->
+				<a href="https://github.com/siddhantmaitra/GREENMATE">Source</a
+				>
+			</p>
+		</li>
+
+		<li>
+			<h3>StudyPane</h3>
+			<p>
+				<b>StudyPane</b> is an app to help students and learners alike boost their
+				productivity by means of peer accountability. Won 1st prize for Exhibit 2021
+				hackathon, Kolkata.
+			</p>
+			<p>
+				<b>Tech Stack:</b> ReactJS, JavaScript, SCSS, Firebase
+			</p>
+			<p>
+				<b>Links:</b>
+				<a href="https://ternarydevs-studypane.netlify.app/">Demo</a>
+				<a href="https://github.com/siddhantmaitra/exhibit2021-studypane"
+					>Source</a
+				>
+			</p>
+		</li>
+
+		<li>
+			<h3>ProfileDB</h3>
+			<p>
+				<b>StudyPane</b> is a MERN Application that stores 
+				users and aggregate links to their different social media accounts.
+			</p>
+			<p>
+				<b>Tech Stack:</b> MERN (MongoDB, Express, React, Node)
+			</p>
+			<p>
+				<b>Links:</b>
+				<!-- <a href="#">Demo</a> -->
+				<a href="https://github.com/siddhantmaitra/profileDB">Source</a>
+			</p>
+		</li>
+	</ul>
+	<Footer />
 </html>
