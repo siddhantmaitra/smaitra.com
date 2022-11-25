@@ -9,13 +9,9 @@ heroImage: "/hero_self.jpeg"
 This is a [/now](https://nownownow.com/about) page.
 
 * Trying to finish my bachelors.
-* Working on my final year project. The tech stack is: 
-	- Spring Boot and Java 
-	- NextJs and JavaScript
-	- MySQL as Database
+
+* Working on random projects.
 
 * Living with my family in Kolkata.
 
-* Backlogs: 
-	- I should give more time to playing guitar, have not touched for 4 months due to work and college. 
-	- Should make more projects. Fill out the [work](/work) page. 
+ 
