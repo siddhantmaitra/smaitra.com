@@ -40,4 +40,4 @@ This config was added mainly due to:
 [boot]
 systemd=true
 ```
-Having `systemd` is huge plus while running stuff like `docker` without bothering with docker desktop or running `k3d` for when expirementing with kubernetes.
+Having `systemd` is huge plus while running stuff like `docker` without bothering with docker desktop or running `k3d` for when experimenting with kubernetes.
