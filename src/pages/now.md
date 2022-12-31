@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPost.astro"
 title: "Now"
 description: "What I am doing lately"
-updatedDate: "Nov 26 2022"
+updatedDate: "Jan 01 2023"
 heroImage: "/hero_self.jpeg"
 ---
 # What I'm doing now
