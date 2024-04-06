@@ -1,34 +1,42 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<style>
+		main {
+			font-size: larger;
+			@media screen and (max-width: 767px) {
+				text-align: center;
+				font-size: x-large;
+			}
+		}
+	</style>
+
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Hello!</h1>
-			<h2>My name is Siddhant.</h2>
-			<h3>Welcome to my corner of the internet.</h3>
-			<p>I am a final year engineering student with a focus in CS.</p>
-			<p>I sometimes write stuff on my blog.</p>
-			<p>You can find me on:
-				<a href="https://twitter.com/Siddhantmaitra">Twitter</a> 
-				and 
-				<a href="https://github.com/siddhantmaitra">GitHub</a>.</p>
-		</main>
+			<h2>Hello!</h2>
+			<p>
+				I am a programmer with a focus on building optimized and
+				beautiful software.
+			</p>
+			<p>I enjoy collaborating with a team and learning from others.</p>
+			<p>
+				I sometimes write stuff on my <a href="posts">blog</a>.
+			</p>
 
-		<Footer />
+			<p>You can find me on:</p><p>
+				<a href="https://twitter.com/siddhantmaitra">Twitter</a>
+				and
+				<a href="https://github.com/siddhantmaitra">GitHub</a>.
+			</p>
+		</main>
+		<Footer/>
 	</body>
 </html>
-<style>
-	
-
-</style>
