@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "description": "Personal website of Siddhant Maitra. (www.smaitra.com)",
   "private": true,
-  "repository": { 
-  "type": "git", 
-  "url": "https://github.com/siddhantmaitra/astro-blog.git" 
-  }, 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siddhantmaitra/astro-blog.git"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,9 +16,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.5.0",
-    "@astrojs/mdx": "^0.11.4",
-    "@astrojs/rss": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0"
+    "@astrojs/mdx": "^0.11.6",
+    "@astrojs/rss": "^1.2.1",
+    "@astrojs/sitemap": "^1.4.0",
+    "astro": "^4.5.9"
   }
 }
