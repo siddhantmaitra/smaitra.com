@@ -24,13 +24,21 @@ const {
 		<style>
 			.title {
 				font-size: 2em;
-				margin: 0.25em 0 0;
+				margin: 0.25em 0 0;				
 			}
-			hr {
-  				border-top: 1px solid #DDD;
+			.timestamps{
+				text-align: justify;
+				color: #9c9c9c;
 				margin: 1rem 0;
 			}
-
+			@media (max-width: 767px) {
+				.title,.timestamps{
+					text-align: center;
+				}
+				span{
+					display: block;
+				}
+			}
 		</style>
 	</head>
 
@@ -47,9 +55,10 @@ const {
 					/>
 				)}
 				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
-				<hr/>
+				<div class="timestamps">
+				{pubDate && <span style="margin-right: 1rem;">Posted: <time>{pubDate}</time></span>}
+				{updatedDate && <span>Updated: <time>{updatedDate}</time></span>}
+				</div>
 				<slot />
 			</article>
 		</main>
