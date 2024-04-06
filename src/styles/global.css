@@ -1,21 +1,54 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+/* Variables */
+:root {
+	--background-color: #fff;
+	--text-color: #444;
+	--heading-color: #222;
+	--link-color: #2960b9;
+	--code-background-color: #f2f2f2;
+	--blockquote-color: #222;
+	--blockquote-border-color: #999;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root.dark {
+		--background-color: #252627;
+		--text-color: #F9FAFA;
+		--heading-color: #F9FAFA;
+		--link-color: #90C4F9;
+		--code-background-color: #333;
+		--blockquote-color: #F9FAFA;
+		--blockquote-border-color: #666;
+	}
+}
+
+/* Reset */
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* Styles */
 body {
-	font-family: Verdana, sans-serif;
+	font-family: sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 70ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: var(--background-color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: var(--text-color);
 	font-size: 1.2rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
+
 h1,
 h2,
 h3,
@@ -24,45 +57,92 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: var(--heading-color);
 }
+
 a {
-	color: #3273dc;
+	color: var(--link-color);
 }
+
 nav a {
 	margin-right: 10px;
 }
+
 textarea {
 	width: 100%;
-	font-size: 16px;
+	font-size: 1rem;
 }
+
 input {
-	font-size: 16px;
+	font-size: 1rem;
 }
+
 content {
 	line-height: 1.6;
 }
+
 table {
 	width: 100%;
 }
 img {
 	max-width: 100%;
 	height: auto;
+	border-radius: 6px;
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: var(--code-background-color);
 }
 pre {
 	padding: 1rem;
 }
-pre > code {
+pre>code {
 	all: unset;
 }
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border: 1px solid var(--blockquote-border-color);
+	color: var(--blockquote-color);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+@media (max-width: 767px) {
+	header {
+		text-align: center;
+	}
+	body {
+		max-width: 65ch;
+	}
+}
+
+/* Theme button */
+#theme-btn {
+	color: var(--link-color);
+	border: none;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+
+#theme-btn:hover {
+	text-decoration: underline;
+}
+/* Name in header */
+#Name {
+	text-decoration: none;
+	color: var(--heading-color);
+
+}
+/* Post timestamps */
+ul li time {
+	color: #9c9c9c;
+	flex: 0 0 130px;
+	font-style: italic;
+
 }
