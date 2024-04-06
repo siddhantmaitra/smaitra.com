@@ -5,7 +5,7 @@ import childProcess from "child_process";
 
 const gitInfo = childProcess
 	.execSync(
-		"git log -1 --format=%cs --date=local && git branch --show-current",
+		"git log -1 --format=%cs --date=local && git symbolic-ref --short HEAD",
 	)
 	.toString()
 	.trim()
