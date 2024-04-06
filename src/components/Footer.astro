@@ -3,15 +3,14 @@ const today = new Date();
 import {repository } from "../../package.json";
 import childProcess from "child_process";
 
-const gitInfo = childProcess
+const commitDate = childProcess
 	.execSync(
-		"git log -1 --format=%cs --date=local && git symbolic-ref --short HEAD",
+		"git log -1 --format=%cs --date=local",
 	)
 	.toString()
-	.trim()
-	.split("\n");
-console.log(gitInfo);
-const [commitDate, branchName] = gitInfo;
+	.trim();
+console.log("Commit date: ",commitDate);
+const branchName = import.meta.env.CF_PAGES_BRANCH || import.meta.env.VERCEL_GIT_COMMIT_REF;
 ---
 
 <footer>
