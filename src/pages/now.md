@@ -2,18 +2,27 @@
 layout: "../layouts/BlogPost.astro"
 title: "Now"
 description: "What I am doing lately"
-updatedDate: "Jan 01 2024"
+updatedDate: "Apr 06 2024"
 heroImage: "/hero_self.jpeg"
 ---
-# What I'm doing now
+
+
+
 This is a [/now](https://nownownow.com/about) page.
 
-* Finished my bachelors degree!
+### Recently...
 
-* ~~Still commuting 2 hrs for an internship~~ Engaged in full-time employment! 
+* Moved to Hyderabad
 
-* Working on random projects.
+* Engaged in full-time employment as a software engineer
 
-* Living ~~with my family in Kolkata~~ in Hyderabad . 😔
+* Working on random projects in the weekends
+
+* Writing for fun
+
+* Listening to more music
+
+* Attempting to live life more conciously :)
+
 
  
