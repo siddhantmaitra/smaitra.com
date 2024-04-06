@@ -1,13 +1,34 @@
 ---
 const today = new Date();
+import {repository } from "../../package.json";
+import childProcess from "child_process";
+
+const gitInfo = childProcess
+	.execSync(
+		"git log -1 --format=%cs --date=local && git rev-parse --abbrev-ref HEAD",
+	)
+	.toString()
+	.trim()
+	.split("\n");
+console.log(gitInfo);
+const [commitDate, branchName] = gitInfo;
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Siddhant Maitra. All rights reserved.
+	<!-- &copy; •  -->
+	<div>Siddhant Maitra • {today.getFullYear()}</div>
+	<div>
+		<!-- Version: {version}   -->
+		Last updated:
+		<a href=`${repository.url.replace('.git','')}/commits/${branchName}`>
+			{commitDate}
+		</a>
+	</div>
 </footer>
 <style>
 	footer {
-		padding: 1.5rem;
-		text-align: center;
+		text-align: center;	
+		margin-top: auto;
 	}
+	
 </style>
