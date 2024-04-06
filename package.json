@@ -6,7 +6,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/siddhantmaitra/astro-blog.git"
+    "url": "https://github.com/siddhantmaitra/smaitra.com.git"
   },
   "scripts": {
     "dev": "astro dev",
