@@ -1,6 +1,4 @@
 import type { APIRoute } from 'astro';
-
-
 export const prerender = false;
 
 export const GET: APIRoute = async ({ params, request }) => {
@@ -11,10 +9,5 @@ export const GET: APIRoute = async ({ params, request }) => {
     } else {
         const postURL = new URL(request.url).origin + '/posts/automate-laptop-setup'
         return Response.redirect(postURL);
-
     }
-
-
-
-
 }
