@@ -1,5 +1,3 @@
+Personal website of Siddhant Maitra
 
-
-Personal website, version 3. 
-
-Written using [Astro](https://astro.build).
+Written in Astro.
