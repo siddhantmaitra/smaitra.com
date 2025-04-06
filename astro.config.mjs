@@ -1,9 +1,8 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel";
 
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,5 +22,5 @@ export default defineConfig({
       wrap: true
     }
   },
-  adapter: process.env.VERCEL === '1' ? vercel() : cloudflare()
+  adapter: vercel()
 });

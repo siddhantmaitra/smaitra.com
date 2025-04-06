@@ -1,6 +1,8 @@
 # build output
 dist/
 .astro
+.vercel
+.wrangler
 
 # dependencies
 node_modules/
