@@ -11,7 +11,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://smaitra.com',
   integrations: [mdx(), sitemap()],
-  output: 'server',
+  output: 'static',
   markdown: {
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
