@@ -2,7 +2,7 @@
 layout: "../layouts/BlogPost.astro"
 title: "Now"
 description: "What I am doing lately"
-updatedDate: "Apr 06 2024"
+updatedDate: "2025-07-22"
 heroImage: "/hero_self.jpeg"
 ---
 
@@ -12,15 +12,9 @@ This is a [/now](https://nownownow.com/about) page.
 
 ### Recently...
 
-* Moved to Hyderabad
+* Living with family in Kolkata
 
-* Engaged in full-time employment as a software engineer
-
-* Working on random projects in the weekends
-
-* Writing for fun
-
-* Listening to more music
+* Engaged in full-time employment as a software engineer for ~ 2 years now
 
 * Attempting to live life more conciously :)
 
