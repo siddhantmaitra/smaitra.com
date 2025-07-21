@@ -90,7 +90,7 @@ I would likely prefer an experience similar to plugging in any other USB webcam 
 
 This is how it looks now whenever I plug in my android device:
 
-![webcam setup consent notification](/Screenshot_20250719_210911.png)
+![webcam setup consent notification](/Screenshot_20250719_210947.png)
 
 When clicked yes:
 
