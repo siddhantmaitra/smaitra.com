@@ -2,14 +2,14 @@
 layout: "../../layouts/BlogPost.astro"
 title: Setup an android phone as webcam on linux
 description: Notes on setting up my phone as a webcam
-pubDate: 2025-07-19, 21:36
-updateDate: 2025-07-19, 21:56
+pubDate: 2025-07-06, 23:03
+updatedDate: 2025-08-09, 01:37
 publish: true
 type: blog
 tags:
   - linux
   - tech
-  - note
+  - blog
 ---
 
 Hello! My in-built laptop webcam has given up on me after 5 years. The capture quality of the webcam was pretty bad and any replacement for it would be of same quality,thus feeding my reluctance to replace it. But, I do need a webcam for occassional interviews and calls.
@@ -20,11 +20,9 @@ This led me to the epiphany of figuring out how to use my android device as a we
 
 Turns out, it is a problem with well-documented solutions, using [v4l2loopback](https://wiki.archlinux.org/title/V4l2loopback). Following are my notes  on suggested solutions and what I made for myself using those.
 
->Tested on my devices with this specs:
->1. `6.15.7-arch1-1` release EndeavourOS as host
->2. Android 15 Samsung Galaxy M55s as the webcam
-> 
-> While it shouldn't be an issue with using other GNU/linux OSes and relatively modern android devices, always remember to check and verify compatibility at each step  
+
+> **NOTE:** While it shouldn't be an issue with using other GNU/linux OSes and relatively modern android devices, always remember to check and verify compatibility at each step.
+
 
 ## Requirements
 Host: 
