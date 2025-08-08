@@ -1,8 +1,7 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import BaseHead,{formatTime} from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-
 export interface Props {
 	content: {
 		title: string;
@@ -12,7 +11,6 @@ export interface Props {
 		heroImage?: string;
 	};
 }
-
 const {
 	content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
@@ -24,12 +22,16 @@ const {
 		<style>
 			.title {
 				font-size: 2em;
-				margin: 0.25em 0 0;				
+				margin: 0.25em 0 0;
+				text-wrap: pretty;
 			}
 			.timestamps{
-				text-align: justify;
+				text-align: center;
 				color: #9c9c9c;
 				margin: 1rem 0;
+			}
+			body{
+				max-width: 85ch;
 			}
 			@media (max-width: 767px) {
 				.title,.timestamps{
@@ -56,8 +58,8 @@ const {
 				)}
 				<h1 class="title">{title}</h1>
 				<div class="timestamps">
-				{pubDate && <span style="margin-right: 1rem;">Posted: <time>{pubDate}</time></span>}
-				{updatedDate && <span>Updated: <time>{updatedDate}</time></span>}
+				{pubDate && <span style="margin-right: 1rem;">Posted: {formatTime(pubDate)}</span>}
+				{updatedDate && <span>Updated: {formatTime(updatedDate)}</span>}
 				</div>
 				<slot />
 			</article>
