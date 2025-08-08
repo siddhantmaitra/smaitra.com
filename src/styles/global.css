@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,700); /*|Lora:700);*/
+@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400|Lora:400,700);
 /* Variables */
 :root {
 	--background-color: #fff;
@@ -35,7 +35,7 @@ html {
 
 /* Styles */
 body {
-	font-family: "IBM Plex Sans",sans-serif;
+	font-family: "Lora",sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 85ch;
