@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
+import BaseHead,{formatTime} from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
@@ -22,14 +22,6 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 			ul li {
 				display: flex;
 			}
-			/* ul li time {
-				flex: 0 0 130px;
-				font-style: italic;
-				color: #595959;
-			} */
-			/* ul li a:visited {
-				color: #8e32dc;
-			} */
 		</style>
 	</head>
 	<body>
@@ -39,13 +31,7 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 				<ul>
 					{posts.map((post) => (
 						<li>
-							<time datetime={post.frontmatter.pubDate}>
-								{new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
-									year: 'numeric',
-									month: 'short',
-									day: 'numeric',
-								})}
-							</time>
+							<time datetime={post.frontmatter.pubDate}>{formatTime(post.frontmatter.pubDate)}</time>
 							<a href={post.url}>{post.frontmatter.title}</a>
 						</li>
 					))}

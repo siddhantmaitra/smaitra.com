@@ -10,6 +10,16 @@ export interface Props {
 }
 
 const { title, description, image = '/hero_minimal_640.jpg' } = Astro.props;
+
+export function formatTime(timestamp : String) {
+	return new Intl.DateTimeFormat("en-US", {
+		timeZone:"Asia/Kolkata",
+		year: "numeric",
+		month: "short",
+		day: "2-digit",
+	})
+		.format(new Date(timestamp));
+}
 ---
 
 <!-- Global Metadata -->
