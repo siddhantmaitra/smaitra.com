@@ -1,3 +1,4 @@
+@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400,700); /*|Lora:700);*/
 /* Variables */
 :root {
 	--background-color: #fff;
@@ -26,6 +27,7 @@ body,
 html {
 	margin: 0;
 	padding: 0;
+	scrollbar-gutter: stable;
 }
 * {
 	box-sizing: border-box;
@@ -33,10 +35,10 @@ html {
 
 /* Styles */
 body {
-	font-family: sans-serif;
+	font-family: "IBM Plex Sans",sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 70ch;
+	max-width: 85ch;
 	text-align: left;
 	background-color: var(--background-color);
 	word-wrap: break-word;
@@ -90,7 +92,6 @@ img {
 	border-radius: 6px;
 }
 code {
-	padding: 2px 5px;
 	background-color: var(--code-background-color);
 }
 pre {
@@ -113,6 +114,11 @@ blockquote {
 	}
 	body {
 		max-width: 65ch;
+		font-size: 1.1rem;
+
+		pre>code{
+			font-size:0.85rem;
+		}
 	}
 }
 
@@ -127,8 +133,7 @@ blockquote {
 	margin: 4px 2px;
 	cursor: pointer;
 	background-color: transparent;
-	font-size: 1.2rem;
-	font-family: sans-serif;
+	font-size: inherit;
 }
 
 #theme-btn:hover {
@@ -147,3 +152,7 @@ ul li time {
 	font-style: italic;
 
 }
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: "Lora", sans-serif;
+} */

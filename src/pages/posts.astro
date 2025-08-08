@@ -21,6 +21,9 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 			}
 			ul li {
 				display: flex;
+				a {
+					text-decoration-line: none;
+				}
 			}
 		</style>
 	</head>
