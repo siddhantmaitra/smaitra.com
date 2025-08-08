@@ -9,7 +9,7 @@ const commitDate = childProcess
 	)
 	.toString()
 	.trim();
-const branchName = import.meta.env.CF_PAGES_BRANCH || import.meta.env.VERCEL_GIT_COMMIT_REF;
+const branchName = import.meta.env.VERCEL_GIT_COMMIT_REF || 'main';
 ---
 
 <footer>
