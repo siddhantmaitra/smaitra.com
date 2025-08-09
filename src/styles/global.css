@@ -1,4 +1,3 @@
-@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400|Lora:400,700);
 /* Variables */
 :root {
 	--background-color: #fff;
@@ -35,7 +34,7 @@ html {
 
 /* Styles */
 body {
-	font-family: "Lora",sans-serif;
+	font-family: "IBM Plex Sans",sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 85ch;
@@ -146,12 +145,7 @@ blockquote {
 
 }
 /* Post timestamps */
-ul li time {
-	color: #9c9c9c;
-	flex: 0 0 130px;
-	font-style: italic;
 
-}
 
 /* h1, h2, h3, h4, h5, h6 {
   font-family: "Lora", sans-serif;

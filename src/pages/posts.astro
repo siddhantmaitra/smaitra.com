@@ -16,11 +16,17 @@ const posts = (await Astro.glob('./posts/*.{md,mdx}')).sort(
 			ul {
 				list-style-type: none;
 				padding: unset;
-			}
-			ul li {
-				display: flex;
-				a {
-					text-decoration-line: none;
+				li {
+					display: flex;
+					a {
+						text-decoration-line: none;
+					}
+					time {
+						color: #9c9c9c;
+						flex: 0 0 130px;
+						font-style: italic;
+					}
+
 				}
 			}
 		</style>
