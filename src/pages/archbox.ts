@@ -7,7 +7,7 @@ export const GET: APIRoute = async ({ params, request }) => {
     if (request.headers.get("user-agent")?.startsWith("curl") ||
         request.headers.get("user-agent")?.startsWith("Wget")
         ) {
-            return response;
+            return new Response(await response.text());
     } else {
         const postURL = new URL(request.url).origin + '/posts/automate-laptop-setup'
         return Response.redirect(postURL);
