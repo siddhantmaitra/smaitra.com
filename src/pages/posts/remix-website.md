@@ -46,5 +46,3 @@ few things that do not work as intended that require further investigation, whic
 ## At the End
 Overall, as of writing this post, I am pretty satisfied with this website. I intend to keep it this way, while posting time to time, 
 until I get another wave of motivation to rewrite everything from scratch. Thank you for reading my first blog post!
-
----

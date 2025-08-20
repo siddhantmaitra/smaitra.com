@@ -10,10 +10,12 @@ const commitDate = childProcess
 	.toString()
 	.trim();
 const branchName = import.meta.env.VERCEL_GIT_COMMIT_REF || 'main';
+const blogPage = Astro.url.pathname.match("(?<=/posts/).+") ? true : false;
 ---
 
 <footer>
 	<!-- &copy; •  -->
+	 {blogPage && <hr/>}
 	<div>Siddhant Maitra • {today.getFullYear()}</div>
 	<div>
 		<!-- Version: {version}   -->

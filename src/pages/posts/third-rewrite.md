@@ -28,6 +28,6 @@ Reluctant to do styling, I have picked up a template for now and it looks fantas
 
 In future, I think I would look into adding components from other frameworks(maybe svelte?) and see what I can use it for. More personalization through styling should be done. But for now, I achieved what I wanted and I feel satisfied. 
 
----
+
 
 

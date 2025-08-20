@@ -7,7 +7,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: 'https://smaitra.com',
   integrations: [mdx(), sitemap()],
-  output: 'hybrid',
+  output: process.env.VERCEL === '1' ? 'hybrid' : 'static',
   markdown: {
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
@@ -21,5 +21,5 @@ export default defineConfig({
       wrap: true
     }
   },
-  adapter: vercel()
+  adapter: process.env.VERCEL === '1' ? vercel() : undefined
 });
