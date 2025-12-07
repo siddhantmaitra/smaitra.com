@@ -4,7 +4,7 @@ title: Automating my laptop setup process
 description: Automated setup of devices is pretty great!
 pubDate: Apr 07 2024
 createdDate: 2024-04-07, 22:47
-updateDate: 2024-04-08, 01:55
+updateDate: 2025-12-08, 00:19
 tags:
   - blog
   - tech
@@ -75,25 +75,7 @@ I recently read a blogpost by [Mike Nikles](https://www.mikenikles.com/) with th
 
 That would be pretty neat. 
 
-Mike's method did not work for me since I am using `Astro` for my website. So I came up with this after reading the docs: 
-
-```ts
-import type { APIRoute } from 'astro';
-export const prerender = false;
-
-export const GET: APIRoute = async ({ params, request }) => {
-
-    const response = await fetch("https://raw.githubusercontent.com/siddhantmaitra/scripts/main/working/setup.sh");
-    if (request.headers.get("user-agent")?.startsWith("curl")) {
-        return new Response(await response.text());
-    } else {
-        const postURL = new URL(request.url).origin + '/posts/automate-laptop-setup'
-        return Response.redirect(postURL);
-    }
-}
-```
-
-Adding this code to  `archbox.ts` file in `src/pages` directory of the project, now enables me to do:
+Mike's method did not work for me since I am using `Astro` for my website. So I came up with [this](https://github.com/siddhantmaitra/smaitra.com/blob/ceda3c1251c048e6cc5472113fc379c9ece27739/src/pages/archbox.ts) after reading the docs.It enables me to do:
 
 ```bash
 curl www.smaitra.com/archbox | bash
@@ -101,7 +83,7 @@ curl www.smaitra.com/archbox | bash
 
 And with this, any EndeavourOS running KDE will be setup in an automated manner with settings that work for me the best!
 
-Looks cool too: 
+Here is a demo: 
 
 <video width="100%" height="100%" controls loop>
 <source src="https://github.com/siddhantmaitra/device-setup/assets/65553994/cd1cff30-7294-452b-9e1a-c6afffe10e45" type="video/mp4">
