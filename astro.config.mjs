@@ -7,6 +7,7 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   site: "https://smaitra.com",
   integrations: [mdx(), sitemap()],
+  output: "static",
   markdown: {
     shikiConfig: {
       theme: "one-dark-pro",
