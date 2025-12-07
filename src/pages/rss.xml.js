@@ -6,6 +6,6 @@ export async function GET() {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: import.meta.env.SITE,
-    items: await pagesGlobToRssItems(import.meta.glob("./blog/**/*.{md,mdx}")),
+    items: await pagesGlobToRssItems(import.meta.glob("./posts/**/*.{md,mdx}")),
   });
 }
